@@ -1,0 +1,106 @@
+.woocommerce ul.products.columns-3 li.product, .woocommerce-page ul.products.columns-3 li.product{
+    max-width: 300px;
+}
+
+.woocommerce ul.products li.product a{
+    display: block;
+    position: relative;
+}
+
+.woocommerce ul.products li.product a img{
+    z-index: 0;
+}
+
+.woocommerce ul.products li.product .onsale{
+    width:  50px;
+    line-height:     50px;
+    padding:    0;
+    top: 10px;
+    background: #bb9739;
+}
+
+.woocommerce ul.products li.product .button{
+    background-color: #fff;
+    color: #bb9739;
+    line-height: 40px;
+    border: 1px solid #bb9739;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+    z-index: 1;
+}
+
+.woocommerce ul.products li.product .button:hover{
+    background-color: #bb9739;
+    color: #fff;
+}
+
+.woocommerce ul.products li.product .button:before{
+    content: '\f07a';
+    position: absolute;
+    font-family: FontAwesome;
+    left: 0px;
+    top: 0px;
+    font-size: 14px;
+    width: 40px;
+    height: 100%;
+    background: #bb9739;
+    color: #ffffff;
+    text-align: center;
+    border-right: 1px solid #fff;
+
+
+
+}
+
+.woocommerce ul.products li.product h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.woocommerce ul.products li.product .price {
+    display: block;
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+}
+
+.woocommerce ul.products li.product .price del {
+    display: none
+}
+
+.woocommerce ul.products li.product .price ins {
+    display: block;
+    text-align: center;
+}
+
+.woocommerce-Price-amount.amount{
+    font-weight: bold;
+    color: #000;
+    font-size: 23px;
+}
+
+.woocommerce nav.woocommerce-pagination ul{
+    border:none;
+}
+
+.woocommerce .woocommerce-pagination ul.page-numbers li, .woocommerce-page .woocommerce-pagination ul.page-numbers li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.woocommerce nav.woocommerce-pagination ul li span.current {
+    background: #337ab7;
+    color: #fff;
+    padding: 12px;
+}
+.woocommerce-pagination ul.page-numbers a.page-numbers {
+    color: #444;
+    padding: 12px;
+    margin: 0px;
+    background: #ddd;
+}
