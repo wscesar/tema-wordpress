@@ -1,18 +1,22 @@
-<?php
-/**
-* Template Name: HomePage Template
-*
-* @package WordPress
-*/
-?>
-
 <?php get_header(); ?>
+
+<?php get_template_part('content', 'page'); ?>
+
 
 <?php if (is_home()) : ?>
 	<section class="banner">
 		<img src="https://vinicolacastanho.com.br/wp-content/uploads/2018/10/3930-Vin%C3%ADcola-Castanho-Tour-para-empresas-Banner-site-1348x289.png" alt="">
 	</section>
+<?php else : ?>
+
 <?php endif; ?>
+
+
+<?php if (is_page($page = 'Blog')) : ?>
+	<?php the_title() ?>
+	<?php the_content() ?>
+<?php endif; ?>
+
 
 
 <section class="woocommerce">
@@ -37,8 +41,8 @@
 				<li class="product">
 
 					<a href="<?= get_permalink($query->post->ID) ?>">
-                        
-                        <?php
+						<?php
+						
 							woocommerce_show_product_sale_flash($post, $product);
 						
 							if (has_post_thumbnail($query->post->ID))
@@ -53,7 +57,7 @@
 						?>
 					</a>
 
-					<!-- woocommerce add to cart button -->
+					<!-- chamar botao comprar do woocommerce -->
 					<?php woocommerce_template_loop_add_to_cart($query->post, $product); ?>
 				</li>
 			

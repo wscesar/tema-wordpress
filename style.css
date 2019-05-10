@@ -1,14 +1,23 @@
- header{
+@charset "UTF-8";
+
+/*
+Theme Name: My Theme
+Author: William Siqueira
+*/
+
+header {
     /*display: flex;*/
     align-items: center;
     padding: 0 25px;
     justify-content: space-between;
     min-width: 100%;
 }
-.top-menu{
-    float: 
+
+.top-menu {
+    float:
 }
-.top-menu{
+
+.top-menu {
     width: 100%;
     float: left;
     display: flex;
@@ -17,12 +26,11 @@
     padding: 15px 25px 0;
 }
 
-.top-menu ul li:not(:first-of-type){
+.top-menu ul li:not(:first-of-type) {
     border-left: 1px solid #adacac;
-
 }
 
-.top-menu ul li{
+.top-menu ul li {
     list-style: none;
     display: inline-block;
     padding: 0px 10px;
@@ -35,35 +43,33 @@
     text-transform: uppercase;
 }
 
-.top-menu ul li a{
+.top-menu ul li a {
     text-decoration: none;
     color: #000;
     font-weight: 600;
 }
 
-
-nav ul{
+nav ul {
     background: #bb9739;
     color: #fff;
     font-weight: 700;
     padding: 0 15px;
-    min-width: 100%; 
+    min-width: 100%;
 }
 
-nav ul li a{
+nav ul li a {
     color: #fff;
     padding: 15px;
     display: block;
     padding: 15px !important;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     background: #836928!important;
     color: #fff!important;
 }
 
-
-#searchform #searchsubmit{
+#searchform #searchsubmit {
     border: 0;
     border-radius: 0;
     height: 50px;
@@ -71,42 +77,34 @@ nav ul li a:hover{
     width: 100px;
 }
 
-#searchform #s{
+#searchform #s {
     height: 50px;
 }
 
-.navbar-toggle .icon-bar{
-    
+.navbar-toggle .icon-bar {
     background: #fff;
 }
 
-
-.navbar-toggle span{
+.navbar-toggle span {
     color: #fff;
-    
 }
 
-a{
+a {
     color: inherit;
 }
 
 @media (min-width: 1200px) {
-    
     .container {
-        width: calc( 100% - 30px); 
-       clear: both
+        width: calc( 100% - 30px);
+        clear: both
     }
-
-
 }
 
 @media screen and (max-width: 767px) {
-
-    header{
-        padding-bottom:0;
+    header {
+        padding-bottom: 0;
     }
-    
-    .navbar-toggle{
+    .navbar-toggle {
         background: #bb9739;
         width: 100%;
         float: left;
@@ -119,96 +117,77 @@ a{
         border-radius: 0;
         margin-top: 15px;
     }
-
-
-} 
+}
 
 @media (max-width: 767px) {
-
-    header{
+    header {
         flex-direction: column;
     }
-
-    header .custom-logo-link{
+    header .custom-logo-link {
         margin-bottom: 30px;
     }
-
     #searchform {
         width: 100%
     }
-
-
-
 }
 
- @media only screen and (max-width: 480px) {
-    #searchform #s{
+@media only screen and (max-width: 480px) {
+    #searchform #s {
         max-width: calc( 100% - 100px);
-    }  
- }
+    }
+}
 
- @media only screen and (min-width: 481px) {
-
-     #searchform #s{
+@media only screen and (min-width: 481px) {
+    #searchform #s {
         height: 50px;
         min-width: 320px;
     }
-
- }
-
-
+}
 
 @media (min-width: 768px) {
-
-    nav{
+    nav {
         margin-top: 30px
     }
-
-    .navbar-nav{
+    .navbar-nav {
         min-width: 100%;
         padding: 0 15px;
     }
-
-   .navbar-inverse .navbar-nav > li > a:after {
-       content: "";
-       margin-left: 0;
-   }
-   
+    .navbar-inverse .navbar-nav>li>a:after {
+        content: "";
+        margin-left: 0;
+    }
 }
 
+html {
+    margin: 0!important;
+}
 
-html{
-    margin:0!important;
+body {
+    text-align: left;
 }
-body
-{
-text-align: left;
+
+#sidebar_right {
+    border-left: 1px solid black;
 }
-#sidebar_right
-{
-border-left: 1px solid black;
-}
+
 .header-logo {
     text-align: center;
 }
+
 .header-logo img {
     height: 45px;
 }
-.jumbotron h1, .jumbotron .h1 {
-    font-size: 35px;
-    color: #aaa;
-    text-align: center;
+
+.title {
+    font-size: 11pt;
+    font-family: verdana;
+    font-weight: bold;
 }
 
-.title
-{
-font-size: 11pt;
-font-family: verdana;
-font-weight: bold;
-}
 #main {
     margin-bottom: 50px;
 }
+
 a {
     color: #34393e;
     text-decoration: none;
@@ -221,6 +200,7 @@ a {
     padding: 40px;
     background: #eee;
 }
+
 #footer h1 {
     color: #aaa;
     font-size: 30px;
